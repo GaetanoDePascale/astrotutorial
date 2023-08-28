@@ -43,7 +43,7 @@ html {
   margin: 0;
 }
 
-.nav-links a {
+.nav-links a, p {
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -71,7 +71,7 @@ html {
     background: none;
   }
 
-  .nav-links a {
+  .nav-links a, p {
     display: inline-block;
     padding: 15px 20px;
   }
@@ -108,7 +108,7 @@ html {
 
 /* dark */
 html.dark {
-  background-color: #0d0950;
+  background-color: #000000;
   color: #fff;
 }
 
