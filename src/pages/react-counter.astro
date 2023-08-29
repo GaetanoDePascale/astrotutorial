@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ReactCounter from '../components/ReactCounter';
+import Counter from '../components/ReactCounter';
 
 // Style imports
 import '../styles/Counter.css';
@@ -8,6 +8,5 @@ const pageTitle = 'React counter';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<p>This is a react counter.</p>
-	<ReactCounter client:visible />
+	<Counter client:visible />
 </BaseLayout>
