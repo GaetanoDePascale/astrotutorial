@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AstroCounter from '../components/AstroCounter.astro';
+
+// Style imports
+import '../styles/Counter.css';
+const pageTitle = 'Astro counter';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<AstroCounter />
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+const { title } = Astro.props;
+---
+
+<div class='container' id='card'>
+	<div class='counter'>
+		<button class='counter-button' id='button.minus'> -</button>
+		<p id='value'>0</p>
+		<button class='counter-button' id='button.plus'> +</button>
+	</div>
+</div>
+
+<script>
+	console.log('int cards');
+
+	const plus = document.getElementById('button.plus') as HTMLElement;
+	const minus = document.getElementById('button.minus') as HTMLElement;
+	const value = document.getElementById('value');
+
+	plus.onclick = () => {
+		value.textContent = (parseInt(value.textContent) + 1).toString();
+	};
+	minus.onclick = () => {
+		value.textContent = (parseInt(value.textContent) - 1).toString();
+	};
+</script>
